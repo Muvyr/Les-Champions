@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&family=Poppins:wght@600&family=Raleway:ital,wght@0,100;0,400;1,400;1,900&display=swap');
 body {
     margin: 0;
-    height: 25000px;
   }
 
 #title{
@@ -159,4 +158,31 @@ a.button {
 #bouton:hover{
     background-color: white;
     color: black;
+}
+
+
+#contact{
+    background-color: rgb(58, 172, 182);
+
+}
+
+#infos{
+    margin-left: 30%;
+}
+
+#infos p{
+    
+}
+
+#mail{
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100px;
+    border: 2px solid black;
+}
+
+#mail p{
+    display: inline-block;
+    line-height: normal;
 }
