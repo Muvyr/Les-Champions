@@ -1,41 +1,34 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>3</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>        
-        <script src="main.js" async defer></script>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="2.css" />
+    <title>Les Champions</title>
+</head>
+<body>
+    <div id="nav">
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">Les Champions</div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">A propos de nous</a></li>
+                <li><a href="#help">Nous soutenir</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+    </div>
 
-        <header class="header">
-            <nav class="navbar">
-                <a href="#" class="nav-logo">Les Champions</a>
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">A propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#help" class="nav-link">Nous soutenir</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
-        </header>
-
-
-        <!-- ======== HOME ======== -->
+    <!-- ======== HOME ======== -->
     <div id="home">
         <div id="centered">SOLIDARITÉ</div>
         <img src="img/car.jpg" alt="image europ'raid voiture">
@@ -57,7 +50,7 @@
     <!-- ======== AIDE ======== -->
     <div id="background">
     <div id="help">
-        <h1>Comment nous aider ?</h1>
+        <h1>Comment nous aidez ?</h1>
         <div id="conteneur">
             <div class="element">
                 <h2>En faisant un don</br> sur notre cagnotte en ligne</h2>
@@ -93,7 +86,6 @@
             </br>
         </div>
     </div>
-
-
-    </body>
+ 
+</body>
 </html>

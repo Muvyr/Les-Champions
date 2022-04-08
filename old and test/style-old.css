@@ -1,23 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&family=Poppins:wght@600&family=Raleway:ital,wght@0,100;0,400;1,400;1,900&display=swap');
 
-/* UTILITIES */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 html {
     scroll-behavior: smooth;
-}
-li a {
-    text-decoration: none;
-}
-li {
-    list-style: none;
+  }
+
+body {
+    margin: 0;
+  }
+
+/*
+========== NAVIGATION ==========
+*/
+#title{
+    font-family: 'Poppins', sans-serif;
 }
 
-
-/* NAVBAR STYLING STARTS */
 #nav{
     background-color: white;
     position: -webkit-sticky;
@@ -25,50 +22,39 @@ li {
 	top: 0;
     z-index: 1000000;
 }
-.navbar {
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 25px;
     background-color: white;
-    color: black;
     margin-left: 15%;
     margin-right: 15%;
 }
-.nav-links a {
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin: 20px;
+}
+
+nav img{
+    width: 150px;
+    border-radius: 100%;
+}
+
+#navi{
     color: black;
 }
-/* LOGO */
-.logo {
-    font-size: 32px;
-    font-family: 'Poppins', sans-serif;
-}
-/* NAVBAR MENU */
-.menu {
-    display: flex;
-    gap: 1em;
-    font-size: 18px;
-}
-.menu li a:hover {
+
+#navi:hover{
     color: rgb(32, 227, 234);
 }
-.menu li {
-    padding: 5px 14px;
-}
-
-/*RESPONSIVE NAVBAR MENU STARTS*/
-/* CHECKBOX HACK */
-input[type=checkbox]{
-    display: none;
-} 
-/*HAMBURGER MENU*/
-.hamburger {
-    display: none;
-    font-size: 24px;
-    user-select: none;
-}
-
-
 
 /*
 ========== HOME ==========
@@ -93,14 +79,13 @@ input[type=checkbox]{
     border-radius: 10px;
 }
 
-
 /*
 ========== A PROPOS ==========
 */
 #about{
     display: flex;
     flex-wrap: wrap;
-    scroll-margin-top: 5em;
+    scroll-margin-top: 3em;
 }
 
 #text{
@@ -242,52 +227,79 @@ a.button {
 
 
 
-/* APPLYING MEDIA QUERIES */
-@media (max-width: 960px) {
-    .menu { 
-        display:none;
-        position: absolute;
-        background-color: white;
-        right: 0;
-        left: 0;
-        text-align: center;
-        padding: 16px 0;
-    }
 
-    .menu li + li {
-        margin-top: 12px;
-    }
-    input[type=checkbox]:checked ~ .menu{
-        display: block;
-    }
-    .hamburger {
-        display: block;
-    }
-    .dropdown {
-        left: 50%;
-        top: 30px;
-        transform: translateX(35%);
-    }
 
-    /* LOGO */
-    .logo {
-        font-size: 20px;
+/*Responsive*/
+
+@media screen and (max-width: 1280px){
+    
+    /*
+    ========== NAVIGATION ==========
+    */
+    #title{
         font-family: 'Poppins', sans-serif;
     }
-    /*NAV BAR*/
-    .navbar {
+    #nav{
+        background-color: white;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1000000;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px;
+        background-color: white;
         margin-left: 5%;
         margin-right: 5%;
+        
     }
-
-    /*HOME*/
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        display: inline;
+        margin: 20px;
+    }
+    
+    nav img{
+        width: 150px;
+        border-radius: 100%;
+    }
+    
+    #navi{
+        display: none;
+    }
+    
+    /*
+    ========== HOME ==========
+    */
     #home{
-        scroll-margin-top: 0;
+        width: 100%;
+        position: relative;
     }
+    
+    #home img{
+        width: 100%;
+    }
+    
     #centered{
-        font-size: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        /*background-color: rgba(255, 255, 255, 0.80);*/
+        border-radius: 10px;
     }
-
+    
     /*
     ========== A PROPOS ==========
     */
