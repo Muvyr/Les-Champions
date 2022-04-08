@@ -282,7 +282,7 @@ a.button {
 
     /*HOME*/
     #home{
-        scroll-margin-top: -3em;
+        scroll-margin-top: 0;
     }
     #centered{
         font-size: 40px;
