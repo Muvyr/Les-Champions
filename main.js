@@ -1,9 +1,3 @@
-/*$('.navbar .item').on("click",function(){
-    $(".navbar-collapse").collapse('hide');
-});
-
-$('.nav .item.dropdown-submenu').unbind();*/
-
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
