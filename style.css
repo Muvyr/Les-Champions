@@ -266,6 +266,7 @@ a.button {
     height: 200px;
     display: flex;
     align-items: center;
+    margin: 10px;
 }
 
 .elementE img{
