@@ -515,6 +515,11 @@ a.button {
         justify-content: center;
         padding-bottom: 20px;
     }
+
+    .elementE img{
+        width: 100%;
+    }
+    
     
     /*
     ========== CONTACT ==========
